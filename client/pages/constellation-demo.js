@@ -10,6 +10,7 @@ Pages = [
 ];
 
 Meteor.subscribe('tools');
+Package["constellation:console"].API.hideCollection('tools');
 
 Template.page_tools_add.helpers({
   tools: function() {
