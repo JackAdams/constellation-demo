@@ -1,0 +1,51 @@
+<template name="brochure">
+
+    <div id="pt-main" class="pt-perspective">
+    	{{#each pages}}
+            {{> transition_page}}
+        {{/each}}
+    </div>
+
+    {{!<div class="pt-message">
+        <p>Your browser does not support CSS animations.</p>
+    </div>}}
+    
+</template>
+
+<template name="brochureMenu">
+  <div class="codrops-top clearfix">
+    <ul id="brochure-menu">
+      {{#each menuItems}}
+        <li>
+          <a href="{{pathFor route}}" class="{{#if active}}active{{/if}}">{{text}}</a>
+          <ul class="submenu">
+            {{#each submenuItems}}
+              <li><a href="{{pathFor route}}" class="{{#if active}}active{{/if}}">{{text}}</a></li>
+            {{/each}}
+          </ul>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="transition_page">
+	<div class="pt-page {{class}}" data-page="{{route}}">
+      {{> page_content}}
+      {{#each directions}}
+        {{#if pageHasDirection ..}}
+          {{> direction direction=direction page=..}}
+        {{/if}}
+      {{/each}}
+    </div>
+</template>
+
+<template name="page_content">
+    {{> page}}
+</template>
+
+<template name="direction">
+	<!-- <div class="go-{{direction}}" title="Use the arrow keys for fast navigation">
+      
+    </div> -->
+</template>

@@ -1,0 +1,123 @@
+<template name="page_home">
+  <div style="text-align:center;margin-top:40px;">
+    <a href="{{pathFor 'demo'}}"><img src="/images/constellation.png" style="margin:4em 0 0 0;border-radius:15px;" /></a><br/>
+    <!-- <a class="go-button" href="{{pathFor 'demo'}}">demo</a> -->
+    <h1>Meteor dev console</h1>
+  </div>
+</template>
+
+<template name="page_demo">
+  <div class="single-page-wrapper" style="margin-top:2em;">
+    {{> demo}}
+  </div>
+</template>
+
+<template name="page_demo_video">
+  <div class="single-page-wrapper">
+    
+  </div>
+</template>
+
+<template name="page_tools">
+  <div class="single-page-wrapper">
+    <h1>Plugin packages available for Constellation</h1>
+    <ul class="constellation-plugins">
+      <li>Basic console (document editing, search, account impersonation, undo/redo, fullscreen toggle)<a href="https://atmospherejs.com/constellation/console" target="_blank">constellation:console</a></li>
+      <li>Generate <strong>Simple Schema</strong> using existing collection data<a href="https://atmospherejs.com/constellation/schema" target="_blank">constellation:schema</a></li>
+      <li>See <strong>Velocity</strong> test results in the console<a href="https://atmospherejs.com/constellation/velocity" target="_blank">constellation:velocity</a></li>
+      <li>Shorten long collection names<a href="https://atmospherejs.com/constellation/shorten-collection-names" target="_blank">constellation:shorten-collection-names</a></li>
+      <li>Minify the console some more<a href="https://atmospherejs.com/constellation/tiny" target="_blank">constellation:tiny</a></li>
+      <li>Reposition the console and show a button to open it<a href="https://atmospherejs.com/constellation/position" target="_blank">constellation:position</a></li>
+      <li>Toggle autopublish, so all fields/documents are available on the client<a href="https://atmospherejs.com/constellation/autopublish" target="_blank">constellation:autopublish</a></li>
+      <li>Show current subscriptions<a href="https://atmospherejs.com/constellation/subscriptions" target="_blank">constellation:subscriptions</a></li>
+      <li>Edit <strong>Session</strong> variables and other reactive dictionaries<a href="https://atmospherejs.com/constellation/session" target="_blank">constellation:session</a></li>
+      <li>See the DDP traffic that is flowing between client and server<a href="https://atmospherejs.com/lai/ddp-inspector" target="_blank">lai:ddp-inspector</a></li>
+      <li>See the templates in your app and the data contexts of those templates<a href="https://atmospherejs.com/babrahams/temple" target="_blank">babrahams:temple</a></li>
+    </ul>
+  </div>
+</template>
+
+<template name="page_tools_comparison">
+  <div class="single-page-wrapper comparison-page">
+    <table class="comparison">
+      <thead>
+        <tr>
+          <td>
+            Dev tools comparison
+          </td>
+          <td>
+            Meteortoys
+          </td>
+          <td>
+            Constellation
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Free and open source</td><td></td><td>✓</td></tr>
+        <tr><td>Pluggable via packages</td><td></td><td>✓</td></tr>
+        <tr><td>Plugin API for devs</td><td></td><td>✓</td></tr>
+        <tr><td>Configurable from console</td><td></td><td>✓</td></tr>
+        <tr><td>Edit collection documents easily</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Local collection support</td><td></td><td>✓</td></tr>
+        <tr><td>Search collections</td><td></td><td>✓</td></tr>
+        <tr><td>Undo/redo changes</td><td></td><td>✓</td></tr>
+        <tr><td>Recover removed documents</td><td>✓ (persisted)</td><td>✓ (temporary)</td></tr>
+        <tr><td>Collection reset</td><td>✓</td><td></td></tr>
+        <tr><td>Account impersonation</td><td>✓ (requires login first time)</td><td>✓ (requires Meteor.users subscription)</td></tr>
+        <tr><td>Autopublish toggle</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Hot code reload trigger</td><td>✓</td><td></td></tr>
+        <tr><td>Session variable (reactive-dict) manipulation</td><td>✓ (+ reactive-var)</td><td>✓</td></tr>
+        <tr><td>Subscriptions viewer</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Publications viewer + subscribe from console</td><td>✓</td><td></td></tr>
+        <tr><td>Execute method calls from console</td><td>✓</td><td></td></tr>
+        <tr><td>DDP Inspector</td><td>✓ (in browser console)</td><td>✓</td></tr>
+        <tr><td>Fullscreen</td><td></td><td>✓</td></tr>
+        <tr><td>Miniaturize console</td><td></td><td>✓</td></tr>
+        <tr><td>Re-position console</td><td></td><td>✓</td></tr>
+        <tr><td>Shorten long collection names</td><td></td><td>✓</td></tr>
+        <tr><td>Connections status/toggle</td><td>✓</td><td></td></tr>
+        <tr><td>Run server code with results in console</td><td>✓</td><td></td></tr>
+        <tr><td>Template data inspector</td><td></td><td>✓</td></tr>
+        <tr><td>Simple Schema generator</td><td></td><td>✓</td></tr>
+        <tr><td>Velocity tests reporter</td><td></td><td>✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<template name="page_tools_add">
+  <div class="single-page-wrapper">
+    <h1>More Meteor dev tools</h1>
+    <ul>
+      <li><a href="https://atmospherejs.com/gwendall/template-inspector" target="_blank">gwendall:template-inspector</a></li>
+    </ul>
+    <div class="add-tool-form-wrapper">
+      If you know of a tool that should be on this list, please submit a url below.<br /><br />
+      <form>
+        <input type="text" style="width:90%;" placeholder="url ..." />
+        <button class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </div>
+</template>
+
+<template name="page_about">
+  <div class="single-page-wrapper">
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</template>
+
+<template name="page_get_involved">
+  <div class="single-page-wrapper">
+    <h1></h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</template>

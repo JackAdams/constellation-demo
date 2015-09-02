@@ -1,0 +1,128 @@
+.pages-home {
+	background: #257c98;
+}
+
+.pages-demo {
+	background: #559d99;
+}
+
+.pages-tools {
+	background: #aa4d3c;	
+}
+
+.pages-tournament {
+	background: #c08f54;	
+}
+
+.pages-development {
+	background: #375d84;	
+}
+
+a, a:hover, a:focus {
+	color: #fff;
+	text-decoration: none;	
+}
+
+a:active, a:focus {
+	outline: none;	
+}
+
+.news-item {
+	display:block;
+	font-family:'Bariol';
+	font-weight:bold;
+	border:2px solid #fff;
+	border-radius:5px;
+	margin-top:20px;
+	padding:10px 20px;
+	background: #fff;
+	color: #257c98;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.single-page-wrapper a {
+	opacity: 0.8;
+	text-decoration: underline;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.single-page-wrapper a:hover {
+	opacity: 0.5;
+}
+
+textarea, input {
+	color: #000;
+}
+
+.go-button {
+	display:inline-block;
+	font-family:'Bariol';
+	font-size:60px;
+	font-weight:bold;
+	border:2px solid #fff;
+	border-radius:5px;
+	margin-top:.7em;
+	padding:0px 40px;
+}
+
+.go-button:hover {
+	background: #fff;
+	color: #257c98;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.constellation-plugins {
+	list-style: none;
+	padding: 0;
+}
+
+.constellation-plugins a {
+	float: right;	
+}
+
+.comparison-page {
+	overflow: auto !important;
+	margin-top: 0 !important;
+	text-align: center;
+}
+
+table.comparison {
+	border: 1px solid rgba(255,255,255,0.6);
+	border-collapse: collapse;
+	margin-top: 60px;
+	font-size: smaller;
+	display: inline-table;
+	text-align: left;
+}
+
+table.comparison thead td {
+	background: rgba(255,255,255,0.2);	
+}
+
+table.comparison td {
+	padding: 2px 6px;
+	border: 1px solid rgba(255,255,255,0.6);
+}
+
+table.comparison td:not(:first-child) {
+	text-align: center;
+}
+
+.add-tool-form-wrapper {
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 10px;
+	margin-top: 40px;
+	padding: 20px;
+}

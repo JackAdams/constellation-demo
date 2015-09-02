@@ -1,0 +1,48 @@
+<head>
+  <title>Constellation Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+</head>
+
+<template name="demo">
+  <div class="outer">
+    {{> loginButtons}}
+    <h1 class="title">Follow the instructions below</h1>
+    <div class="subtitle" style="text-align:left;">
+      <ul style="display:inline-table;height:70px;margin-bottom:0;list-style:none;">
+        <li class="controls">
+          <button class="inc prev">Previous</button>
+          <button class="inc next">Next</button>
+        </li>
+        {{#each thingsToDo}}
+          {{#if thing}}<li class="{{#unless current}}greyed-out{{/unless}}"><span class="greyed-out">{{number}}.</span> {{thing}}</li>{{/if}}
+        {{/each}}
+      </ul>
+    </div>
+    {{> leaderboard}}
+  </div>
+</template>
+
+<template name="leaderboard">
+  <ol class="leaderboard">
+    {{#each players}}
+      <li>{{> player}}</li>
+    {{/each}}
+  </ol>
+
+  {{#if selectedName}}
+    <div class="details">
+      <div class="name">{{selectedName}}</div>
+      <button class="inc">Add 5 points</button>
+    </div>
+  {{else}}
+    <div class="message">Click a player to select</div>
+  {{/if}}
+</template>
+
+<template name="player">
+  <div class="player {{selected}}">
+    <span class="name">{{name}}</span>
+    <span class="score">{{score}}</span>
+  </div>
+</template>

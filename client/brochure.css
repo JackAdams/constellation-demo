@@ -1,0 +1,182 @@
+/* CSS declarations go here */
+
+.go-right, .go-left, .go-up, .go-down {
+	position: absolute;
+	height: 128px;
+	width: 128px;
+	opacity: 0.1;
+}
+
+.go-right:hover, .go-left:hover, .go-up:hover, .go-down:hover {
+	opacity: 0.5;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.go-right {
+	top: 0;
+  	bottom: 0;
+  	margin: auto 0;
+	right: 20px;
+	background-image:url(/images/arrow-right.png);
+}
+
+.go-left {
+	top: 0;
+  	bottom: 0;
+  	margin: auto 0;
+	left: 20px;
+	background-image:url(/images/arrow-left.png);
+}
+
+.go-up {
+	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+	top: 20px;
+	background-image:url(/images/arrow-up.png);
+}
+
+.go-down {
+	left: 0;
+  	right: 0;
+  	margin: 0 auto;
+	bottom: 20px;
+	background-image:url(/images/arrow-down.png);
+}
+
+.page-wrapper {
+	position:relative;
+	font-size:larger;
+	margin-top:6em;
+	min-width:1000px;	
+}
+
+.single-page-wrapper {
+	margin: 10em auto;
+	width:60%;	
+}
+
+.left-column {
+	display:inline-block;
+	margin-top:1em;
+	top:0px;
+	position:relative;
+	width:30%;
+	margin-left:12%;	
+}
+
+.right-column {
+	display:inline-block;
+	width:50%;
+	margin-top:1em;
+	position:absolute;
+	right:120px;	
+}
+
+.left-image {
+	border-radius:10px;
+	margin-top:22px;
+	width:80%;
+	opacity:.9;	
+}
+
+.pt-page h2 a, a.fade {
+	opacity:0.5;	
+}
+
+.pt-page h2 a:hover, a.fade:hover {
+	opacity:1;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#team div, #consulting div, #products a {
+	display: inline-block;
+	text-align: center;
+	font-size: small;
+	vertical-align: top;
+}
+
+#products a {
+	margin-right:40px;	
+}
+
+#consulting div {
+	text-align: left;
+	margin-right: 40px;
+}
+
+#consulting ul, #philosophy, #features {
+	padding-left:0;
+	list-style:none;
+}
+
+#about {
+	display:inline-table;	
+}
+
+#about td {
+	vertical-align:top;
+	text-align:left;
+	padding:0 20px;
+}
+
+#brochure-menu {
+	margin: 0;
+	padding: 0;
+}
+
+#brochure-menu li {
+	position: relative;
+	list-style: none;
+	display: inline-block;	
+}
+
+#brochure-menu .submenu {
+	position: absolute;
+	top: 24px;
+	left: 0px;
+	opacity: 0;
+	text-align: left;
+	margin: 0;
+	padding: 3px 0 0 0;
+}
+
+#brochure-menu .submenu li {
+	display: block;
+	margin-bottom:3px;
+	height:0px;
+}
+
+#brochure-menu .submenu li a {
+	display:none;
+}
+
+#brochure-menu li:hover .submenu {
+	opacity: 1;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;	
+}
+
+#brochure-menu li:hover .submenu li {
+	height: 24px;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+#brochure-menu li:hover .submenu li a {
+	display:block;	
+}
