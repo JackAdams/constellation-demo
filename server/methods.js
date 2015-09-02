@@ -14,3 +14,21 @@ Meteor.methods({
 		});
 	}
 });
+
+SyncedCron.add({
+  name: 'Clean out the users collection and add one user',
+  schedule: function(parser) {
+    // parser is a later.parse object
+    return parser.text('every 15 minutes');
+  },
+  job: function() {
+    Meteor.users.remove({});
+	Accounts.createUser({
+	  password: "password",
+	  email: "test@test.com",
+	  username: "test"
+	});
+  }
+});
+
+SyncedCron.start();
