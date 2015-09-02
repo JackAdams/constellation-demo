@@ -17,7 +17,7 @@ if (Players.find().count() === 0) {
 Meteor.subscribe('users');
 
 var thingsToDo = [
-  'CTRL + C (or click the blue dot at the bottom left)',
+  'CTRL + C (or click the blue dot at the bottom left of the screen)',
   'Click on the "Config ..." tab and reveal the "Account" and "Full screen" tabs, then hide the "hideMe" collection',
   'Click on the "Account" tab and impersonate the user in the database (Click "Choose account" then "Impersonate")',
   'Change the user\'s username (click on the green text by the "username" field)',
@@ -36,6 +36,7 @@ var thingsToDo = [
   'Click the "On/Off" button on the "Temple" tab to see where the templates are',
   'Click on the "DDP Inspector" tab and see what\'s been going on between client and server',
   'Just for a laugh, go to the "Session" tab again and select the "ConstellationDemo" ReactiveDict, then change the "animation" to "cube" (instead of "move") and start navigating around the site',
+  'That\'s it. "meteor add babrahams:constellation" to one of your projects and try it for yourself!'
 ];
 
 var ThingToDo = new ReactiveDict('thingToDo');

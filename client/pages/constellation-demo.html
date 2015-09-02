@@ -1,8 +1,9 @@
 <template name="page_home">
   <div style="text-align:center;margin-top:40px;">
-    <a href="{{pathFor 'demo'}}"><img src="/images/constellation.png" style="margin:4em 0 0 0;border-radius:15px;" /></a><br/>
+    <h1 style="margin:4em 0 0 0;">Constellation</h1>
+    <h2 style="color:#9bd;margin:0 0 1em 0;">Meteor dev console</h2>
+    <a href="{{pathFor 'demo'}}"><img src="/images/constellation.png" style="margin:0;border-radius:15px;" /></a><br/>
     <!-- <a class="go-button" href="{{pathFor 'demo'}}">demo</a> -->
-    <h1>Meteor dev console</h1>
   </div>
 </template>
 
@@ -13,8 +14,8 @@
 </template>
 
 <template name="page_demo_video">
-  <div class="single-page-wrapper">
-    
+  <div class="single-page-wrapper" style="text-align:center;">
+    <iframe width="771" height="401" src="https://www.youtube.com/embed/cdorRuTwIbI" frameborder="0" allowfullscreen style="display:inline-table;"></iframe>
   </div>
 </template>
 
@@ -58,7 +59,7 @@
         <tr><td>Pluggable via packages</td><td></td><td>✓</td></tr>
         <tr><td>Plugin API for devs</td><td></td><td>✓</td></tr>
         <tr><td>Configurable from console</td><td></td><td>✓</td></tr>
-        <tr><td>Edit collection documents easily</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Edit collection documents</td><td>✓</td><td>✓</td></tr>
         <tr><td>Local collection support</td><td></td><td>✓</td></tr>
         <tr><td>Search collections</td><td></td><td>✓</td></tr>
         <tr><td>Undo/redo changes</td><td></td><td>✓</td></tr>
@@ -88,9 +89,11 @@
 
 <template name="page_tools_add">
   <div class="single-page-wrapper">
-    <h1>More Meteor dev tools</h1>
-    <ul>
-      <li><a href="https://atmospherejs.com/gwendall/template-inspector" target="_blank">gwendall:template-inspector</a></li>
+    <h1>List of Meteor dev tools</h1>
+    <ul class="constellation-plugins">
+      {{#each tools}}
+        <li>{{description}}<a href="{{link}}" target="_blank">{{linkText}}</a></li>
+      {{/each}}
     </ul>
     <div class="add-tool-form-wrapper">
       If you know of a tool that should be on this list, please submit a url below.<br /><br />

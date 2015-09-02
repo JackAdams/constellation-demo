@@ -1,5 +1,5 @@
 # Constellation demo website
 
-The codebase for the demo site at constellation-demo.meteor.com.
+The codebase for the demo site at [constellation-demo.meteor.com](constellation-demo.meteor.com).
 
-(Constellation is an extensible dev console for Meteor)
+(__Constellation__ is an extensible dev console for Meteor)
