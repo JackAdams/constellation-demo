@@ -4,6 +4,7 @@ ConstellationDemo = new ReactiveDict('constellation-demo');
 
 ConstellationDemo.setDefault('page',null);
 ConstellationDemo.setDefault('animation','move');
+ConstellationDemo.set('animationsAvailable', ["move","cube","flip","slide","fade","cover","ease","scaleUp","scaleDown","scaleOut","scaleIn","dropAway","fall","newspaper","push","fold","unfold","room","carousel","sides"]);
 currentAnimationName = null;
 
 pageTransitionerController = RouteController.extend({
