@@ -13,4 +13,3 @@ iron:router
 reactive-dict
 email
 percolate:synced-cron
-constellation:viewmodel
