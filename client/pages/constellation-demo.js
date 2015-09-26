@@ -9,12 +9,28 @@ Pages = [
 	{text:"Development",menu:5,class:"pages-development",template:"page_development",route:"development",up:"tournament"}*/
 ];
 
-Meteor.subscribe('tools');
-Package["constellation:console"].API.hideCollection('tools');
+// Meteor.subscribe('tools');
+// Package["constellation:console"].API.hideCollection('tools');
 
 Template.page_tools_add.helpers({
   tools: function() {
-	return Tools.find();
+	return [
+	  {
+		description: "Tool for inspecting Blaze templates",
+		link: "https://atmospherejs.com/gwendall/template-inspector",
+		linkText: "gwendall:template-inspector" 
+	  },
+	  {
+		description: "Insanely Handy Development Tools for Meteor",
+		link: "https://atmospherejs.com/meteortoys/allthings",
+		linkText: "Meteor Toys 2" 
+	  },
+	  {
+		description: "Extensible dev console for Meteor",
+		link: "https://atmospherejs.com/constellation/console",
+		linkText: "Constellation"  
+	  }
+	]; // Tools.find();
   }
 });
 
