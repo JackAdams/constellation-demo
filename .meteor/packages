@@ -23,8 +23,6 @@ random
 ejson
 spacebars
 check
-constellation:plugins
 constellation:position
 constellation:autopublish
 constellation:tiny
-yelongren:constellation-reload
