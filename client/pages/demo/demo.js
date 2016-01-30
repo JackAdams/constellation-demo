@@ -18,7 +18,7 @@ Meteor.subscribe('users');
 
 var thingsToDo = [
   'CTRL + C (or click the blue dot at the bottom left of the screen)',
-  'Click on the "Config ..." tab and reveal the "Account" and "Full screen" tabs, then hide the "hideMe" collection',
+  'Click on the "Config | Guide" tab and reveal the "Account" and "Full screen" tabs, then hide the "hideMe" collection',
   'Click on the "Account" tab and impersonate the user in the database (Click "Choose account" then "Impersonate")',
   'Change the user\'s username (click on the green text by the "username" field)',
   'Switch "Autopublish" on to see the unpublished fields from the user document in the "Account" tab',
