@@ -1,7 +1,9 @@
 Players = new Mongo.Collection(null);
 hideMe = new Mongo.Collection(null);
 
-Package["babrahams:temple"].Temple.exclude(".pt-page");
+Meteor.startup(function () {
+  Package["babrahams:temple"].Temple.exclude(".pt-page");
+});
 
 if (Players.find().count() === 0) {
   var names = ["Ada Lovelace", "Grace Hopper", "Marie Curie",
