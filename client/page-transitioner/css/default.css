@@ -14,12 +14,12 @@
 
 @font-face {
 	font-family: 'Bariol';
-	src:url('/fonts/beijingtouch/Bariol_Light.otf') format('opentype'),
-	    url('/fonts/beijingtouch/bariol_light-webfont.woff') format('woff'),
-		url('/fonts/beijingtouch/Bariol_Regular.otf') format('opentype'),
-	    url('/fonts/beijingtouch/bariol_regular-webfont.woff') format('woff'),
-		url('/fonts/beijingtouch/Bariol_Thin.otf') format('opentype'),
-	    url('/fonts/beijingtouch/bariol_thin-webfont.woff') format('woff');
+	src:url('/fonts/constellation/Bariol_Light.otf') format('opentype'),
+	    url('/fonts/constellation/bariol_light-webfont.woff') format('woff'),
+		url('/fonts/constellation/Bariol_Regular.otf') format('opentype'),
+	    url('/fonts/constellation/bariol_regular-webfont.woff') format('woff'),
+		url('/fonts/constellation/Bariol_Thin.otf') format('opentype'),
+	    url('/fonts/constellation/bariol_thin-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;	
 }
