@@ -17,7 +17,7 @@ Meteor.methods({
 
 SyncedCron.add({
   name: 'Clean out the users collection and add one user',
-  schedule: function(parser) {
+  schedule: function (parser) {
     // parser is a later.parse object
     return parser.text('every 15 minutes');
   },

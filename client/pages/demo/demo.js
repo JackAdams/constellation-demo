@@ -35,7 +35,7 @@ var thingsToDo = [
   'Open the "Temple" tab and start rolling over the leaderboard',
   'Click the "On/Off" button on the "Temple" tab to see where the templates are',
   'Click on the "DDP Inspector" tab and see what\'s been going on between client and server',
-  'Just for a laugh, go to the "Session" tab again and select the "ConstellationDemo" ReactiveDict, then change the "animation" to "cube" (instead of "move") and start navigating around the site',
+  'Just for a laugh, go to the "Session" tab again and select the "ConstellationDemo" ReactiveDict, then change the "animation" to "cube" (instead of "move") and start navigating around the site using the menus at the top',
   'That\'s it. "meteor add babrahams:constellation" to one of your projects and try it for yourself!'
 ];
 
